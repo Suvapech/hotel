@@ -215,15 +215,63 @@ const App = () => {
             },
         },
         {
-            name: "Tolani Northgate Villa Chiang Mai",
-            price: 13770 ,
-            location: " 1/10 Soi 2 Manee-Nopparat Road, Tambon Sripoom, Muang, Si Phum, 50000 เชียงใหม่",
+            name: "Villa 89 Nimman Chiang Mai",
+            price: 21185 ,
+            location: " 20, Soi 9, Sirimongklajan Road, Suthep, Muang, 50200 เชียงใหม่",
             type: "วิลล่า",
             images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
-                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/495063711.jpg?k=944d503b8f7cbb1c80f5e9e31658d1cbc51280d773c4b02ccb32777ea97a43b7&o=&hp=1",
-                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/280175749.jpg?k=1364644bfee6f9369f296abb36fccda1174694df40face50663c620e76629881&o=&hp=1",
-                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/503298213.jpg?k=7879dd1d5b84e7cb02465c592f39cc93804114e217f50fbb0b1fb348e37e558b&o=&hp=1",
-                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/495062914.jpg?k=6e60285740773a91c2cb00b805cd08e3a8f0c2e78b743331d8a6e5e3a56783cf&o=&hp=1"],
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/433526962.jpg?k=cc3f5090204867c4885f69522749cb084ed0e878bb5fc07b42a45f1f376766e5&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/122734330.jpg?k=ce192e3e9f871f2d4d0a81aa00e44d236dbeef632fdf80c2746397704f581f41&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/122734312.jpg?k=0c7d157951a5e48b5a422f84b80b24350624be38fd18e0f76ddf4266a6adfb82&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/433527286.jpg?k=649a9956048c027d50e958468b8755c6a83f286d7122e4a93683feb9deac9859&o=&hp=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "The Corner's unique house",
+            price: 4500 ,
+            location: "4/9 Mahidol road soi 1 Haiya district, หายยา, 50100 เชียงใหม่",
+            type: "วิลล่า",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/84096028.jpg?k=96806155b76a0fd97ce1f16bde8694e7d239bc4f707a260c9145aa11dbf5f28e&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/166800083.jpg?k=1866010a1b55a6afc2f7530f845c47db3be06a03b80e6fe43cdd5750050cdb07&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/95810426.jpg?k=ce27a431ce2015015b25bc65ed5692a42996364369bf3bf5fbece1ca16855da1&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/166800092.jpg?k=dfc90a4a827bab444df1957188dc5d67a990111b685f147e4bc2be0978b7055e&o=&hp=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "Starry Night Villa by Zhang Bin",
+            price: 7000 ,
+            location: " 188/33 Moo 8, House and view 3, Tonpao, Sankamphaeng, 50130 เชียงใหม่",
+            type: "วิลล่า",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/144287472.jpg?k=dfb4c220b083b619faba770670eaafc55c8d4dd1d8d32c048879d7a4088d349e&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/144471664.jpg?k=1d628a3fb512585fdda2ca34e4c5151405c196510aefe331e005e527bbab09a2&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/144470675.jpg?k=dbd1b7902bed8f060cd3e478f8b748b7c2393c4aaafe579229b37485e6fb3271&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/144470631.jpg?k=84133f3fa5ed5091403e60bfaceb99cb8b306a8a9352a1de3d1be38c8af298ca&o=&hp=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "โรงแรมบีทู ริเวอรด์ ไซด์ โคโลเนียล",
+            price: 495 ,
+            location: " 9 ถนน เจริญราษฎร์ ตำบลวัดเกต อำเภอเมือง, ตำบลช้างม่อย, จังหวัดเชียงใหม่",
+            type: "โรงแรม",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://ak-d.tripcdn.com/images/1mc1312000aszm01350E5_R_960_660_R5_D.jpg",
+                "https://ak-d.tripcdn.com/images/1mc1l12000aszlxue9AAA_R_339_206_R5_D.jpg",
+                "https://ak-d.tripcdn.com/images/1mc3r12000aszmm3wF876_R_339_206_R5_D.jpg",
+                "https://ak-d.tripcdn.com/images/0223u12000alwednq2220_R_339_206_R5_D.jpg"],
             roomDetails: { // ข้อมูลรายละเอียดห้องพัก
                 size: 30, // ขนาดห้อง
                 beds: 1, // จำนวนเตียง
@@ -262,7 +310,7 @@ const App = () => {
                 <div className="navbar">
                     <div className="logo">Aloha.com</div>
                     <div className="menu">
-                        <Link to="/" onClick={handleHotelButtonClick}>โรงแรม</Link>
+                        <Link to="/" onClick={handleHotelButtonClick}>ที่พัก</Link>
                         <Link to="/travel">สถานที่ท่องเที่ยว <span className="new-tag">ใหม่</span></Link>
                         <Link to="#">รถเช่า</Link>
                         <Link to="/contact">ติดต่อเรา</Link> {/* เพิ่มลิงก์ไปยังหน้าติดต่อ */}

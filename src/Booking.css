@@ -61,7 +61,7 @@ h1 {
 }
 .modal {
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     left: 800px;
     top: 500px;
     width: 500px;
@@ -84,6 +84,7 @@ h1 {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-top: -20px;
 }
 
 .close:hover,
@@ -101,6 +102,7 @@ h1 {
     cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
     font-size: 16px; /* ขนาดตัวอักษร */
     transition: background-color 0.3s; /* เอฟเฟกต์การเปลี่ยนสี */
+    margin-top: 10px;
 }
 
 .confirm-button:hover {
