@@ -1,0 +1,30 @@
+/* สำหรับสถานที่ท่องเที่ยว */
+.travel-location-list {
+    display: flex;
+    flex-wrap: wrap; /* ทำให้การ์ดอยู่ในหลายบรรทัด */
+    justify-content: space-between; /* จัดกึ่งกลางและเว้นระยะห่างระหว่างการ์ด */
+    padding: 20px; /* ระยะห่างภายใน */
+  }
+
+  /* สำหรับที่พัก */
+  .accommodation-list {
+    display: flex;
+    flex-wrap: wrap; /* ทำให้การ์ดอยู่ในหลายบรรทัด */
+    justify-content: space-between; /* จัดกึ่งกลางและเว้นระยะห่างระหว่างการ์ด */
+    padding: 20px; /* ระยะห่างภายใน */
+  }
+  
+  .accommodation-card {
+    border: 1px solid #ddd; /* เส้นขอบ */
+    border-radius: 5px; /* มุมกลม */
+    padding: 20px; /* ระยะห่างภายใน */
+    margin: 15px; /* ระยะห่างภายนอก */
+    margin-left: 20px; /* เพิ่มระยะห่างจากขอบซ้าย */
+    background-color: #fff; /* สีพื้นหลัง */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงา */
+    color: black; /* เปลี่ยนสีตัวอักษรให้เป็นสีดำ */
+    width: 300px; /* กำหนดความกว้างของการ์ด */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+

@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f3640;
+  padding: 10px 20px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%; /* ใช้ความกว้าง 100% เพื่อให้พอดีกับหน้าจอทุกขนาด */
+}
+
+.navbar .logo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: rgb(255, 247, 0);
+}
+
+.navbar .menu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar .menu a:hover {
+  background-color: #4b6584;
+}
+
+.navbar .menu a.active {
+  border-bottom: 3px solid white;
+}
+
+.navbar .menu .new-tag {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.navbar .right-menu {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.navbar .right-menu button {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #4b6584;
+  color: white;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 20px; /* เพิ่มระยะห่างด้านขวา 0px สำหรับปุ่มเข้าสู่ระบบ */
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.accommodation-list {
+  display: flex;
+  flex-wrap: wrap; /* จัดการ์ดให้อยู่ในหลายบรรทัด */
+  justify-content: center; /* จัดกึ่งกลางแนวนอน */
+  align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+  padding: 20px; /* ระยะห่างภายใน */
+  margin-top: 50px; /* เพิ่มระยะห่างด้านบน */
+}
+
+.accommodation-card {
+  border: 1px solid #ddd; /* เส้นขอบ */
+  border-radius: 5px; /* มุมกลม */
+  padding: 20px; /* ระยะห่างภายใน */
+  margin: 15px; /* ระยะห่างภายนอก */
+  background-color: #fff; /* สีพื้นหลัง */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงา */
+  color: black; /* เปลี่ยนสีตัวอักษรให้เป็นสีดำ */
+  width: 300px; /* กำหนดความกว้างของการ์ด */
+  text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+.welcome-message {
+  position: relative; /* ทำให้ข้อความอยู่ที่ตำแหน่งที่กำหนด */
+  top: 60px; /* ระยะห่างจากด้านบน (ให้พอดีกับ navbar) */
+  text-align: center; /* จัดกึ่งกลาง */
+  font-size: 56px; /* ขนาดตัวอักษร */
+  font-weight: bold; /* น้ำหนักตัวอักษรหนา */
+  color: white; /* สีตัวอักษรขาว */
+  margin: 20px 0; /* ระยะห่างบนล่าง */
+  z-index: 100; /* ให้มันอยู่เหนือส่วนอื่น */
+}
+
+
+/* Media Queries สำหรับอุปกรณ์ต่างๆ */
+@media (max-width: 600px) { /* โทรศัพท์มือถือ */
+  body {
+    font-size: 14px; /* ขนาดตัวอักษรเล็กลง */
+  }
+  
+  .navbar .logo {
+    font-size: 20px; /* ลดขนาดโลโก้ */
+  }
+  
+  .welcome-message {
+    font-size: 36px; /* ขนาดตัวอักษรข้อความต้อนรับเล็กลง */
+  }
+  .navbar {
+    flex-direction: column; /* เปลี่ยนแนวตั้งสำหรับเมนู */
+  }
+  .navbar .menu {
+    flex-direction: column; /* เปลี่ยนเมนูให้เป็นแนวตั้ง */
+    width: 100%; /* ให้ความกว้างเป็น 100% */
+  }
+  .navbar .menu a {
+    padding: 10px; /* ปรับระยะห่างของลิงก์ให้เหมาะสม */
+    font-size: 14px; /* ลดขนาดฟอนต์ */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) { /* iPad และแท็บเล็ต */
+  body {
+    font-size: 15px; /* ขนาดตัวอักษรเล็กลง */
+  }
+  
+  .navbar .logo {
+    font-size: 22px; /* ลดขนาดโลโก้ */
+  }
+  
+  .welcome-message {
+    font-size: 48px; /* ขนาดตัวอักษรข้อความต้อนรับเล็กลง */
+  }
+  .navbar {
+    flex-direction: row; /* ใช้แนวนอนสำหรับเมนู */
+    padding: 10px 15px; /* ปรับระยะห่าง */
+  }
+  .navbar .menu a {
+    padding: 10px 12px; /* ปรับระยะห่างของลิงก์ */
+    font-size: 16px; /* ขนาดฟอนต์ที่เหมาะสม */
+  }
+}
+.type-menu-container {
+  position: relative; /* เพื่อให้เมนูประเภทอยู่เหนือส่วนอื่น */
+}
+
+.type-menu {
+  position: absolute; /* ทำให้เมนูอยู่เหนือองค์ประกอบอื่น */
+  background: transparent; /* ทำให้พื้นหลังเป็นใส */
+  background-color: white; /* สีพื้นหลัง */
+  border: 1px solid #ddd; /* เส้นขอบ */
+  border-radius: 5px; /* มุมกลม */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* เงา */
+  z-index: 10; /* ให้อยู่ด้านบนสุด */
+  padding: 10px; /* ระยะห่างภายใน */
+  margin-top: 5px; /* เว้นระยะห่างจากปุ่ม */
+}
+
+.type-menu button {
+  background: transparent; /* ทำให้พื้นหลังเป็นใส */
+  border: none; /* ไม่มีเส้นขอบ */
+  color: black; /* ตัวอักษรสีดำ */
+  padding: 5px 10px; /* ระยะห่างภายใน */
+  cursor: pointer; /* แสดงมือเมื่อชี้ไปที่ปุ่ม */
+  text-align: left; /* จัดข้อความไปที่ซ้าย */
+  width: 100%; /* ทำให้ปุ่มกว้างเต็ม */
+}
+
+.type-menu button:hover {
+  background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลังเมื่อเอาเมาส์ไปชี้ */
+}
+
+@media (min-width: 1025px) { /* คอมพิวเตอร์และโน้ตบุ๊ก */
+  .navbar {
+    padding: 10px 20px; /* ระยะห่างที่เหมาะสม */
+  }
+  .navbar .menu a {
+    padding: 10px 15px; /* ระยะห่างของลิงก์ */
+    font-size: 16px; /* ขนาดฟอนต์ */
+  }
+}.search-bar {
+  margin-top: 10px; /* ระยะห่างจากปุ่มค้นหา */
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+}
+
+.travel-location-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-top: 50px; /* เพิ่มระยะห่างระหว่าง h2 กับ การ์ด */
+}
+
+.travel-location-card {
+    border: 1px solid #ddd; /* เส้นขอบ */
+    border-radius: 5px; /* มุมกลม */
+    padding: 20px; /* ระยะห่างภายใน */
+    margin: 15px; /* ระยะห่างภายนอก */
+    margin-left: 20px; /* เพิ่มระยะห่างจากขอบซ้าย */
+    background-color: #fff; /* สีพื้นหลัง */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงา */
+    color: black; /* เปลี่ยนสีตัวอักษรให้เป็นสีดำ */
+    width: 300px; /* กำหนดความกว้างของการ์ด */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+h3 {
+    position: relative; /* ทำให้ข้อความอยู่ที่ตำแหน่งที่กำหนด */
+    top: 70px; /* ระยะห่างจากด้านบน (ให้พอดีกับ navbar) */
+    text-align: center; /* จัดกึ่งกลาง */
+    font-size: 24px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* น้ำหนักตัวอักษรหนา */
+    color: rgb(0, 0, 0); /* สีตัวอักษรขาว */
+    margin: 20px 0; /* ระยะห่างบนล่าง */
+    z-index: 100; /* ให้มันอยู่เหนือส่วนอื่น */
+    top: 0; /* ปรับให้ชิดขอบของภาพ */
+}
+h4 {
+    position: relative; /* ทำให้ข้อความอยู่ที่ตำแหน่งที่กำหนด */
+    top: 70px; /* ระยะห่างจากด้านบน (ให้พอดีกับ navbar) */
+    text-align: center; /* จัดกึ่งกลาง */
+    font-size: 56px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* น้ำหนักตัวอักษรหนา */
+    color: white; /* สีตัวอักษรขาว */
+    margin: 20px 0; /* ระยะห่างบนล่าง */
+    z-index: 100; /* ให้มันอยู่เหนือส่วนอื่น */
+}

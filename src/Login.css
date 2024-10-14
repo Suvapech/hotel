@@ -1,0 +1,73 @@
+body {
+    margin: 0; /* ยกเลิก margin ของ body */
+    padding: 0; /* ยกเลิก padding ของ body */
+}
+
+.login-page {
+    display: flex;
+    justify-content: center; /* จัดกลางในแนวนอน */
+    align-items: center; /* จัดกลางในแนวตั้ง */
+    height: 100vh; /* สูงเต็มหน้าจอ */
+    width: 1535px;
+    background-color: #f9f9f9; /* สีพื้นหลัง */
+    font-family: 'Kanit', sans-serif; /* ใช้ฟอนต์ที่นำเข้า */
+}
+
+.card {
+    background: white; /* สีพื้นหลังของการ์ด */
+    color: #000;
+    padding: 20px;
+    border-radius: 8px; /* มุมโค้ง */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เงาของการ์ด */
+    width: 300px; /* กำหนดความกว้างของการ์ด */
+}
+
+.card h2 {
+    color: #000;
+    text-align: center; /* จัดกลางข้อความ */
+    margin: 0 0 20px; /* ระยะห่างด้านล่าง */
+}
+
+.card label {
+    display: block; /* ให้ label อยู่ในบรรทัดใหม่ */
+    margin-bottom: 5px; /* ระยะห่างด้านล่าง */
+}
+
+.card input {
+    width: 95%; /* กว้างเต็มฟอร์ม */
+    padding: 10px; /* ระยะห่างภายใน */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+    border: 1px solid #ccc; /* เส้นขอบ */
+    border-radius: 4px; /* มุมโค้ง */
+}
+
+.card button {
+    width: 100%; /* กว้างเต็มปุ่ม */
+    padding: 10px; /* ระยะห่างภายใน */
+    border: none; /* ไม่ใช้เส้นขอบ */
+    border-radius: 4px; /* มุมโค้ง */
+    background-color: #00ff33; /* สีปุ่ม */
+    color: rgb(0, 0, 0); /* สีตัวอักษร */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์ */
+}
+
+.card button:hover {
+    background-color: #0056b3; /* สีปุ่มเมื่อชี้ */
+}
+
+.login-button, .register-button {
+    margin-top: 10px; /* เพิ่มระยะห่างด้านบน */
+    padding: 10px; /* เพิ่มระยะห่างภายใน */
+    border: none; /* ไม่มีกรอบ */
+    border-radius: 5px; /* ทำมุมให้กลม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+}
+
+.register-button {
+    background-color: #007bff; /* สีพื้นหลังของปุ่มลงทะเบียน */
+    color: white; /* สีตัวอักษร */
+}
+
+.register-button:hover {
+    background-color: #0056b3; /* สีปุ่มลงทะเบียนเมื่อชี้ */
+}

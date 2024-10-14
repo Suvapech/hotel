@@ -1,0 +1,77 @@
+.modal {
+    position: fixed; /* ทำให้ Modal อยู่ในตำแหน่งคงที่ */
+    top: 50%; /* วางกลางหน้าจอในแนวตั้ง */
+    left: 50%; /* วางกลางหน้าจอในแนวนอน */
+    transform: translate(-50%, -50%); /* แก้ไขการจัดตำแหน่งให้ตรงกลาง */
+    background: white; /* พื้นหลังสีขาว */
+    padding: 20px; /* ระยะห่างภายใน */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เงา */
+    z-index: 1000; /* ให้ Modal อยู่ข้างบนสุด */
+}
+.modal-title {
+    font-size: 1.5rem; /* ขนาดตัวอักษรชื่อที่พัก */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+    font-family: 'Mali', sans-serif; /* ใช้ฟอนต์ที่นำเข้า */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* ให้อยู่เหนือเนื้อหาอื่น */
+    font-family: 'Mali', sans-serif; /* ใช้ฟอนต์ที่นำเข้า */
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.849);
+    padding: 20px;
+    border-radius: 8px;
+    color: #000;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh; /* ความสูงสูงสุดของโมดัล */
+    overflow-y: auto; /* การเลื่อนในแนวดิ่ง */
+    position: relative;
+    text-align: left; /* จัดข้อความให้อยู่ชิดซ้าย */
+}
+
+
+.modal-image {
+    border-radius: 8px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: block; /* จัดให้ภาพเป็น Block เพื่อสามารถใช้ Margin */
+    margin: 0 auto 20px; /* จัดให้ภาพอยู่ตรงกลางและมีระยะห่างด้านล่าง */
+}
+
+.modal-title,
+.modal-price,
+.modal-location,
+.modal-type {
+    color: black;
+    margin-bottom: 10px; /* ระยะห่างระหว่างบรรทัด */
+}
+
+.close-button {
+    cursor: pointer;
+    font-size: 36px;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    color: black; /* เปลี่ยนสีของปุ่มปิดเป็นสีดำ */
+    background: transparent; /* ทำให้พื้นหลังเป็นโปร่งใส */
+    border: none; /* ไม่แสดงขอบ */
+}
+.modal-contact {
+    color: black; /* ตั้งค่าสีตัวอักษรเป็นสีดำ */
+    margin-top: 10px; /* เพิ่มระยะห่างด้านบนถ้าต้องการ */
+    font-size: 16px; /* ขนาดตัวอักษร (ปรับตามที่ต้องการ) */
+}
+

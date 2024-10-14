@@ -1,0 +1,53 @@
+.accommodation-button {
+    border: 1px solid #ddd; /* เส้นขอบ */
+    border-radius: 5px; /* มุมกลม */
+    padding: 0; /* ปรับให้ไม่มีระยะห่างภายใน */
+    margin: 15px; /* ระยะห่างภายนอก */
+    background-color: #fff; /* สีพื้นหลัง */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงา */
+    width: 300px; /* กำหนดความกว้างของการ์ด */
+    color: rgb(0, 0, 0); /* เปลี่ยนสีตัวอักษรให้เป็นสีดำ */
+}
+.accommodation-image {
+    width: 299px; /* กำหนดความกว้างของภาพแนวยาว */
+    height: 250px; /* กำหนดความสูงของภาพ */
+    object-fit: cover; /* ให้ภาพเติมเต็มพื้นที่โดยรักษาอัตราส่วน */
+    border-radius: 5px 5px 0 0; /* มุมกลมเฉพาะด้านบน */
+    margin: 0;
+}
+.accommodation-name {
+    color: rgb(0, 0, 0); /* ตัวอักษรปุ่มเป็นสีขาว */
+    font-size: 24px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* น้ำหนักตัวอักษรหนา */
+    margin: 0; /* ไม่ให้มีระยะห่างรอบๆ ชื่อ */
+    padding: 0; /* ไม่ให้มีการ Padding */
+    position: relative; /* ตำแหน่งที่สัมพันธ์กับภาพ */
+    top: 5px; /* ปรับให้ชิดขอบของภาพ */
+    font-family: 'Mali', sans-serif; /* ใช้ฟอนต์ที่นำเข้า */
+}
+.accommodation-card h2 {
+    margin-top: 10px; /* เพิ่มระยะห่างด้านบน 10px */
+}
+.accommodation-price {
+    text-align: right;
+    color: rgb(0, 0, 255); /* ตัวอักษรปุ่มเป็นสีขาว */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    font-weight: bold; /* น้ำหนักตัวอักษรหนา */
+    margin: 0; /* ไม่ให้มีระยะห่างรอบๆ ชื่อ */
+    padding: 0; /* ไม่ให้มีการ Padding */
+    position: relative; /* ตำแหน่งที่สัมพันธ์กับภาพ */
+    top: 5px; 
+    right: 5px;
+}
+.book-button {
+    margin-top: 5px;
+    background-color: blue; /* สีพื้นหลังของปุ่ม */
+    color: white; /* ตัวอักษรปุ่มเป็นสีขาว */
+    padding: 10px 15px; /* ระยะห่างภายในปุ่ม */
+    border: none; /* ไม่มีเส้นขอบ */
+    cursor: pointer; /* แสดงมือเมื่อชี้ไปที่ปุ่ม */
+    border-radius: 5px; /* มุมกลม */
+}
+.map-button {
+    margin-top: 5px; /* ระยะห่าง 20px จากปุ่มด้านบน */
+}
