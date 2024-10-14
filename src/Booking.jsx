@@ -31,31 +31,39 @@ const BookingPage = () => {
         setShowModal(true); // เปิด modal
     };
 
-    const handleConfirmBooking = () => {
+    const handleConfirmBooking = async () => {
         if (!slipImage) {
             alert("กรุณาแนบภาพสลิปการโอน");
             return;
         }
-        // ในที่นี้คุณสามารถดำเนินการส่งข้อมูลการจองไปยังเซิร์ฟเวอร์ได้
-        alert("การจองเสร็จสมบูรณ์!"); // หรือทำการแจ้งเตือนเมื่อจองเสร็จ
-        setShowModal(false); // ปิด modal
+    
+        const formData = new FormData();
+        formData.append('slip', slipImage);
+        formData.append('totalPrice', totalPrice); // แนบยอดเงินที่ต้องชำระไปด้วย
+    
+        try {
+            // ส่งข้อมูลไปยังเซิร์ฟเวอร์เพื่อตรวจสอบสลิปและยอดเงิน
+            const response = await fetch('YOUR_SERVER_ENDPOINT', {
+                method: 'POST',
+                body: formData,
+            });
+    
+            const result = await response.json();
+    
+            if (result.success) {
+                alert("การจองเสร็จสมบูรณ์!"); // หรือทำการแจ้งเตือนเมื่อจองเสร็จ
+                setShowModal(false); // ปิด modal
+                // สามารถทำการนำทางไปยังหน้าถัดไปหรือทำการปรับปรุงสถานะการจองที่นี่ได้
+            } else {
+                alert("ไม่สามารถยืนยันการจองได้: " + result.message);
+            }
+        } catch (error) {
+            console.error("เกิดข้อผิดพลาดในการยืนยันการจอง:", error);
+            alert("เกิดข้อผิดพลาดในการยืนยันการจอง กรุณาลองใหม่อีกครั้ง");
+        }
     };
-    const Booking = () => {
-        const history = useHistory();
     
-        useEffect(() => {
-            const handleBeforeUnload = (event) => {
-                // เปลี่ยนเส้นทางไปหน้าหลักเมื่อมีการรีเฟรช
-                history.push('/');
-                event.preventDefault();
-            };
-    
-            window.addEventListener('beforeunload', handleBeforeUnload);
-    
-            return () => {
-                window.removeEventListener('beforeunload', handleBeforeUnload);
-            };
-        }, [history]);}
+
     return (
         <div className="booking-container">
             <h1>จองที่พัก</h1>
