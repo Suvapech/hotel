@@ -138,7 +138,7 @@ const App = () => {
             name: "บีทู พรีเมียร์ โฮเทล แอนด์ รีสอร์ท",
             price: 495 ,
             location: "163 ถ.เลียบคลองชลประทาน ต.สุเทพ, ตำบลสุเทพ, จังหวัดเชียงใหม่, 50200",
-            type: "โรงแรม",type:"รีสอร์ท",
+            type:"รีสอร์ท",
             images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
                 "https://ak-d.tripcdn.com/images/1mc0612000f5lpl20A709_R_600_400_R5.webp",
                 "https://ak-d.tripcdn.com/images/1mc1012000f5loy6l5C3E_R_600_400_R5.webp",
@@ -168,14 +168,62 @@ const App = () => {
         },
         {
             name: "Nimman Villa 17 Chiangmai - SHA PLUS",
-            price: 16200 ,
+            price: 22500 ,
             location: "  29 ถนนนิมมานเหมินทร์ ซอย 17 ต.สุเทพ อ.เมือง, 50200 เชียงใหม่",
-            type: "โรงแรม",type:"รีสอร์ท",
+            type: "วิลล่า",
             images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
-                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/333506770.jpg?k=3f8f079108443405ad9b478b426dd61e775afe409a22c505b3556d9a9ac098fc&o=&hp=1",
-                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/228825009.jpg?k=b27e71b61f9bd46e4e4f512ab05f13e91acad80d4ec6c422bb951b2f55313a5b&o=&hp=1",
-                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/571326308.jpg?k=489494be4e3e947da54bb009b4365a51630c5a9b1160ff765bdc31294f0c4fc1&o=&hp=1",
-                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/200329087.jpg?k=bd2614b21b40dfdbfd8adf9bbfddec10c4e45f23d8fa80d1f65cff59451d086e&o=&hp=1"],
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/491574349.jpg?k=b41d8133d8b283074651ece812fe1a46875429b89e7a392144a1cf6af03b4bbc&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/376257393.jpg?k=fda65bac5cf481a92fccb8ed40f3584b3a1baa4e659ba63a7050c53091f9e6ad&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/542178143.jpg?k=7df024567ab5fff66b7d41bacaca9c64e119e4dc62874ab14cc6a64c6704368c&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/238698498.jpg?k=ed8e4984d113a87d9b971e72b51085c8c44cc802232ff50d4633006830ab848f&o=&hp=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "Tolani Nimman Villa Chiang Mai",
+            price: 14841 ,
+            location: "  36/6-7 Lane 11 Nimmanhaemin Rd. T.Suthep A.Muang , 50000 เชียงใหม่",
+            type: "วิลล่า",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/51103444.jpg?k=5387009481ddb4a48005785f2d95122f8df23c56b0211a8adaf27cb35dcbcb2b&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/526846656.jpg?k=e672627845348b2bbaf52eda6af8c106338ab35959f592b7bfc56e8ebcf1978d&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/54273656.jpg?k=64df05c39bfbcb2961b7ea890b88433bf1e79197634bb320c0e9faad7b9645e2&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/55007721.jpg?k=420f11d8fd59661a2ca8a7261dfa6cb7631d3073bee387ab9319ecaa513a77e5&o=&hp=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "Tolani Northgate Villa Chiang Mai",
+            price: 13770 ,
+            location: " 1/10 Soi 2 Manee-Nopparat Road, Tambon Sripoom, Muang, Si Phum, 50000 เชียงใหม่",
+            type: "วิลล่า",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/495063711.jpg?k=944d503b8f7cbb1c80f5e9e31658d1cbc51280d773c4b02ccb32777ea97a43b7&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/280175749.jpg?k=1364644bfee6f9369f296abb36fccda1174694df40face50663c620e76629881&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/503298213.jpg?k=7879dd1d5b84e7cb02465c592f39cc93804114e217f50fbb0b1fb348e37e558b&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/495062914.jpg?k=6e60285740773a91c2cb00b805cd08e3a8f0c2e78b743331d8a6e5e3a56783cf&o=&hp=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "Tolani Northgate Villa Chiang Mai",
+            price: 13770 ,
+            location: " 1/10 Soi 2 Manee-Nopparat Road, Tambon Sripoom, Muang, Si Phum, 50000 เชียงใหม่",
+            type: "วิลล่า",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/495063711.jpg?k=944d503b8f7cbb1c80f5e9e31658d1cbc51280d773c4b02ccb32777ea97a43b7&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/280175749.jpg?k=1364644bfee6f9369f296abb36fccda1174694df40face50663c620e76629881&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/503298213.jpg?k=7879dd1d5b84e7cb02465c592f39cc93804114e217f50fbb0b1fb348e37e558b&o=&hp=1",
+                "https://cf2.bstatic.com/xdata/images/hotel/max1024x768/495062914.jpg?k=6e60285740773a91c2cb00b805cd08e3a8f0c2e78b743331d8a6e5e3a56783cf&o=&hp=1"],
             roomDetails: { // ข้อมูลรายละเอียดห้องพัก
                 size: 30, // ขนาดห้อง
                 beds: 1, // จำนวนเตียง
@@ -227,7 +275,6 @@ const App = () => {
                                     <button onClick={() => handleTypeSelect('ทั้งหมด')}>ทั้งหมด</button>
                                     <button onClick={() => handleTypeSelect('โรงแรม')}>โรงแรม</button>
                                     <button onClick={() => handleTypeSelect('รีสอร์ท')}>รีสอร์ท</button>
-                                    <button onClick={() => handleTypeSelect('บ้านพัก')}>บ้านพัก</button>
                                     <button onClick={() => handleTypeSelect('วิลล่า')}>วิลล่า</button>
                                 </div>
                             )}

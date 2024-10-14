@@ -17,13 +17,6 @@
     text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
 }
 
-.booking-image {
-    max-width: 100%; /* ให้รูปภาพมีขนาดสูงสุดตามความกว้างของ container */
-    height: auto; /* รักษาสัดส่วนของรูปภาพ */
-    margin-top: 50px;
-    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างของรูปภาพ */
-}
-
 .booking-form {
     display: flex;
     flex-direction: column; /* เรียงตามแนวตั้ง */
@@ -49,12 +42,20 @@
     background-color: #0056b3; /* เปลี่ยนสีเมื่อ hover */
 }
 h1 {
-    position: relative; /* ทำให้ข้อความอยู่ที่ตำแหน่งที่กำหนด */
-  top: 60px; /* ระยะห่างจากด้านบน (ให้พอดีกับ navbar) */
+  position: relative; /* ทำให้ข้อความอยู่ที่ตำแหน่งที่กำหนด */
+  top: 50px; /* ระยะห่างจากด้านบน (ให้พอดีกับ navbar) */
   text-align: center; /* จัดกึ่งกลาง */
   font-size: 56px; /* ขนาดตัวอักษร */
-  font-weight: bold; /* น้ำหนักตัวอักษรหนา */
-  color: white; /* สีตัวอักษรขาว */
+  font-weight: bold; /* น้ำหนักตัวอักษรหนา */ 
+  color: white; /* สีตัวอักษรขาว */  
   margin: 20px 0; /* ระยะห่างบนล่าง */
+
   z-index: 100; /* ให้มันอยู่เหนือส่วนอื่น */
+}
+.booking-image {
+    width: 299px; /* กำหนดความกว้างของภาพแนวยาว */
+    height: 250px; /* กำหนดความสูงของภาพ */
+    object-fit: cover; /* ให้ภาพเติมเต็มพื้นที่โดยรักษาอัตราส่วน */
+    border-radius: 5px 5px 0 0; /* มุมกลมเฉพาะด้านบน */
+    margin-top: 40px;
 }
