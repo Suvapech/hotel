@@ -59,3 +59,50 @@ h1 {
     border-radius: 5px 5px 0 0; /* มุมกลมเฉพาะด้านบน */
     margin-top: 40px;
 }
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 800px;
+    top: 500px;
+    width: 500px;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(218, 21, 21);
+    text-decoration: none;
+    cursor: pointer;
+}
+.confirm-button {
+    background-color: #28a745; /* สีเขียว */
+    color: white; /* สีตัวอักษร */
+    border: none; /* ไม่มีขอบ */
+    padding: 10px 20px; /* ขนาดปุ่ม */
+    border-radius: 5px; /* มุมมน */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+    font-size: 16px; /* ขนาดตัวอักษร */
+    transition: background-color 0.3s; /* เอฟเฟกต์การเปลี่ยนสี */
+}
+
+.confirm-button:hover {
+    background-color: #218838; /* สีเขียวเข้มขึ้นเมื่อชี้ */
+}
