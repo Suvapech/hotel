@@ -34,7 +34,124 @@ const App = () => {
                 amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
             },
         },
-        // สามารถเพิ่มที่พักอื่น ๆ ได้ที่นี่
+        {
+            name: "มหาวิทยาลัยแม่โจ้",
+            price: 1500,
+            location: "มหาวิทยาลัยแม่โจ้",
+            type: "โรงแรม",
+            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
+            contact: "012-345-6789",
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "มหาวิทยาลัยแม่โจ้",
+            price: 1500,
+            location: "มหาวิทยาลัยแม่โจ้",
+            type: "โรงแรม",
+            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
+            contact: "012-345-6789",
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "มหาวิทยาลัยแม่โจ้",
+            price: 1500,
+            location: "มหาวิทยาลัยแม่โจ้",
+            type: "โรงแรม",
+            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
+            contact: "012-345-6789",
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "มหาวิทยาลัยแม่โจ้",
+            price: 1500,
+            location: "มหาวิทยาลัยแม่โจ้",
+            type: "โรงแรม",
+            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
+            contact: "012-345-6789",
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "มหาวิทยาลัยแม่โจ้",
+            price: 1500,
+            location: "มหาวิทยาลัยแม่โจ้",
+            type: "โรงแรม",
+            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
+            contact: "012-345-6789",
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "มหาวิทยาลัยแม่โจ้",
+            price: 1500,
+            location: "มหาวิทยาลัยแม่โจ้",
+            type: "โรงแรม",
+            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
+            contact: "012-345-6789",
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "มหาวิทยาลัยแม่โจ้",
+            price: 1500,
+            location: "มหาวิทยาลัยแม่โจ้",
+            type: "โรงแรม",
+            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
+            contact: "012-345-6789",
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "มหาวิทยาลัยแม่โจ้",
+            price: 1500,
+            location: "มหาวิทยาลัยแม่โจ้",
+            type: "โรงแรม",
+            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
+            contact: "012-345-6789",
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "มหาวิทยาลัยแม่โจ้",
+            price: 1500,
+            location: "มหาวิทยาลัยแม่โจ้",
+            type: "โรงแรม",
+            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
+            contact: "012-345-6789",
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        
     ]);
 
     const handleTypeButtonClick = () => {
