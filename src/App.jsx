@@ -22,12 +22,14 @@ const App = () => {
 
     const [accommodations, setAccommodations] = useState([
         {
-            name: "มหาวิทยาลัยแม่โจ้",
-            price: 1500,
-            location: "มหาวิทยาลัยแม่โจ้",
+            name: "Chang Phueak Gate Premier Hotel",
+            price: 506,
+            location: "234/18ถ.มณีนพรัตน์, เมืองเชียงใหม่ 50200 ",
             type: "โรงแรม",
-            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
-            contact: "012-345-6789",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/00/43/9f/b2-chang-phueak-gate.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/00/43/9c/deluxe-premier-room.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/00/43/9b/b2-chang-phueak-gate.jpg?w=1200&h=-1&s=1",],
             roomDetails: { // ข้อมูลรายละเอียดห้องพัก
                 size: 30, // ขนาดห้อง
                 beds: 1, // จำนวนเตียง
@@ -35,122 +37,22 @@ const App = () => {
             },
         },
         {
-            name: "มหาวิทยาลัยแม่โจ้",
-            price: 1500,
-            location: "มหาวิทยาลัยแม่โจ้",
+            name: "เมอเวนพิค สุริวงศ์ โฮเต็ล เชียงใหม่",
+            price: 1355,
+            location: "110 ถ.ช้างคลาน, อ.เมือง, ตำบลช้างคลาน, จังหวัดเชียงใหม่, 50100",
             type: "โรงแรม",
-            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
-            contact: "012-345-6789",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://ak-d.tripcdn.com/images/1mc3c12000bdot1j4A20B_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
+                "https://ak-d.tripcdn.com/images/0201t120008496199DE3C_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
+                "https://ak-d.tripcdn.com/images/220h10000000oxsno2317_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
+                "https://ak-d.tripcdn.com/images/220w0u000000jdck7946B_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F"],
             roomDetails: { // ข้อมูลรายละเอียดห้องพัก
                 size: 30, // ขนาดห้อง
                 beds: 1, // จำนวนเตียง
                 amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
             },
         },
-        {
-            name: "มหาวิทยาลัยแม่โจ้",
-            price: 1500,
-            location: "มหาวิทยาลัยแม่โจ้",
-            type: "โรงแรม",
-            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
-            contact: "012-345-6789",
-            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
-                size: 30, // ขนาดห้อง
-                beds: 1, // จำนวนเตียง
-                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
-            },
-        },
-        {
-            name: "มหาวิทยาลัยแม่โจ้",
-            price: 1500,
-            location: "มหาวิทยาลัยแม่โจ้",
-            type: "โรงแรม",
-            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
-            contact: "012-345-6789",
-            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
-                size: 30, // ขนาดห้อง
-                beds: 1, // จำนวนเตียง
-                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
-            },
-        },
-        {
-            name: "มหาวิทยาลัยแม่โจ้",
-            price: 1500,
-            location: "มหาวิทยาลัยแม่โจ้",
-            type: "โรงแรม",
-            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
-            contact: "012-345-6789",
-            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
-                size: 30, // ขนาดห้อง
-                beds: 1, // จำนวนเตียง
-                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
-            },
-        },
-        {
-            name: "มหาวิทยาลัยแม่โจ้",
-            price: 1500,
-            location: "มหาวิทยาลัยแม่โจ้",
-            type: "โรงแรม",
-            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
-            contact: "012-345-6789",
-            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
-                size: 30, // ขนาดห้อง
-                beds: 1, // จำนวนเตียง
-                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
-            },
-        },
-        {
-            name: "มหาวิทยาลัยแม่โจ้",
-            price: 1500,
-            location: "มหาวิทยาลัยแม่โจ้",
-            type: "โรงแรม",
-            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
-            contact: "012-345-6789",
-            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
-                size: 30, // ขนาดห้อง
-                beds: 1, // จำนวนเตียง
-                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
-            },
-        },
-        {
-            name: "มหาวิทยาลัยแม่โจ้",
-            price: 1500,
-            location: "มหาวิทยาลัยแม่โจ้",
-            type: "โรงแรม",
-            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
-            contact: "012-345-6789",
-            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
-                size: 30, // ขนาดห้อง
-                beds: 1, // จำนวนเตียง
-                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
-            },
-        },
-        {
-            name: "มหาวิทยาลัยแม่โจ้",
-            price: 1500,
-            location: "มหาวิทยาลัยแม่โจ้",
-            type: "โรงแรม",
-            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
-            contact: "012-345-6789",
-            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
-                size: 30, // ขนาดห้อง
-                beds: 1, // จำนวนเตียง
-                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
-            },
-        },
-        {
-            name: "มหาวิทยาลัยแม่โจ้",
-            price: 1500,
-            location: "มหาวิทยาลัยแม่โจ้",
-            type: "โรงแรม",
-            image: "https://www.ktc.co.th/pub/media/Travel-Story/Thailand/best-hotels-in-pattaya/best-hotels-in-pattaya-1.webp",
-            contact: "012-345-6789",
-            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
-                size: 30, // ขนาดห้อง
-                beds: 1, // จำนวนเตียง
-                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
-            },
-        },
+        
         
     ]);
 
@@ -199,7 +101,6 @@ const App = () => {
                                     <button onClick={() => handleTypeSelect('รีสอร์ท')}>รีสอร์ท</button>
                                     <button onClick={() => handleTypeSelect('บ้านพัก')}>บ้านพัก</button>
                                     <button onClick={() => handleTypeSelect('วิลล่า')}>วิลล่า</button>
-                                    <button onClick={() => handleTypeSelect('โฮสเทล')}>โฮสเทล</button>
                                 </div>
                             )}
                         </div>
@@ -236,8 +137,7 @@ const App = () => {
                                             price={accommodation.price}
                                             location={accommodation.location}
                                             type={accommodation.type}
-                                            image={accommodation.image}
-                                            contact={accommodation.contact}
+                                            images={accommodation.images}
                                             roomDetails={accommodation.roomDetails} // ส่ง roomDetails
                                         />
                                     ))}

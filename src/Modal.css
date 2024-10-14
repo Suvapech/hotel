@@ -41,16 +41,6 @@
     text-align: left; /* จัดข้อความให้อยู่ชิดซ้าย */
 }
 
-
-.modal-image {
-    border-radius: 8px;
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    display: block; /* จัดให้ภาพเป็น Block เพื่อสามารถใช้ Margin */
-    margin: 0 auto 20px; /* จัดให้ภาพอยู่ตรงกลางและมีระยะห่างด้านล่าง */
-}
-
 .modal-title,
 .modal-price,
 .modal-location,
@@ -69,9 +59,41 @@
     background: transparent; /* ทำให้พื้นหลังเป็นโปร่งใส */
     border: none; /* ไม่แสดงขอบ */
 }
-.modal-contact {
-    color: black; /* ตั้งค่าสีตัวอักษรเป็นสีดำ */
-    margin-top: 10px; /* เพิ่มระยะห่างด้านบนถ้าต้องการ */
-    font-size: 16px; /* ขนาดตัวอักษร (ปรับตามที่ต้องการ) */
+.image-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
+.prev-button,
+.next-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+.modal-image {
+    border-radius: 8px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: block; /* จัดให้ภาพเป็น Block เพื่อสามารถใช้ Margin */
+    margin: 0 auto 20px; /* จัดให้ภาพอยู่ตรงกลางและมีระยะห่างด้านล่าง */
+    display: block;
+}
