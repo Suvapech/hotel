@@ -20,10 +20,10 @@
     color: rgb(0, 0, 0); /* ตัวอักษรปุ่มเป็นสีขาว */
     font-size: 24px; /* ขนาดตัวอักษร */
     font-weight: bold; /* น้ำหนักตัวอักษรหนา */
+    left: 2px;
     padding: 0; /* ไม่ให้มีการ Padding */
     position: relative; /* ตำแหน่งที่สัมพันธ์กับภาพ */
     top: -20px; /* ปรับให้ชิดขอบของภาพ */
-    font-family: 'Mali', sans-serif; /* ใช้ฟอนต์ที่นำเข้า */
 }
 .accommodation-card h2 {
     margin-top: 10px; /* เพิ่มระยะห่างด้านบน 10px */
@@ -41,12 +41,13 @@
 }
 .book-button {
     margin-top: -50px;
-    background-color: blue; /* สีพื้นหลังของปุ่ม */
+    background-color: rgb(50, 50, 166); /* สีพื้นหลังของปุ่ม */
     color: white; /* ตัวอักษรปุ่มเป็นสีขาว */
-    padding: 10px 15px; /* ระยะห่างภายในปุ่ม */
+    padding: 5px 15px; /* ระยะห่างภายในปุ่ม */
     border: none; /* ไม่มีเส้นขอบ */
     cursor: pointer; /* แสดงมือเมื่อชี้ไปที่ปุ่ม */
     border-radius: 5px; /* มุมกลม */
+
 }
 .map-button {
     margin-top: -5px; /* ระยะห่าง 20px จากปุ่มด้านบน */

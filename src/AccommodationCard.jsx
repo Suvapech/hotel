@@ -31,7 +31,7 @@ const AccommodationCard = ({ name, price, location, type, images, roomDetails })
                     <img src="path/to/default-image.jpg" alt="default" className="accommodation-image" /> // ใช้ภาพเริ่มต้นถ้าไม่มีภาพ
                 )}
                 <h2 className="accommodation-name">{name}</h2>
-                <h2 className="accommodation-price">{price}/ต่อวัน</h2>
+                <h2 className="accommodation-price">{price}บาท/วัน</h2>
                 <div className="button-container">
                     <button className="book-button" onClick={handleBooking}>จอง</button>
                 </div>

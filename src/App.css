@@ -84,18 +84,7 @@ body {
   align-items: center; /* จัดกึ่งกลางแนวตั้ง */
   padding: 20px; /* ระยะห่างภายใน */
   margin-top: 50px; /* เพิ่มระยะห่างด้านบน */
-}
-
-.accommodation-card {
-  border: 1px solid #ddd; /* เส้นขอบ */
-  border-radius: 5px; /* มุมกลม */
-  padding: 20px; /* ระยะห่างภายใน */
-  margin: 15px; /* ระยะห่างภายนอก */
-  background-color: #fff; /* สีพื้นหลัง */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เงา */
-  color: black; /* เปลี่ยนสีตัวอักษรให้เป็นสีดำ */
-  width: 300px; /* กำหนดความกว้างของการ์ด */
-  text-align: center; /* จัดข้อความให้อยู่กลาง */
+  margin-left: 100px; /* เพิ่มระยะห่างด้านบน */
 }
 
 .welcome-message {

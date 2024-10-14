@@ -28,7 +28,7 @@ const Modal = ({ isOpen, onClose, name, price, location, type, images, contact, 
                     <button className="next-button" onClick={nextImage}>&gt;</button>
                 </div>
                 <h2 className="modal-title">{name}</h2>
-                <p className="modal-price">ราคา : {price} บาท/ต่อวัน</p>
+                <p className="modal-price">ราคา : {price}บาท/วัน</p>
                 <p className="modal-location">ที่ตั้ง : {location}</p>
                 <p className="modal-type">ประเภท : {type}</p>
                 <p>รายละเอียดห้องพัก</p>
