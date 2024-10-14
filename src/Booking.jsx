@@ -40,7 +40,22 @@ const BookingPage = () => {
         alert("การจองเสร็จสมบูรณ์!"); // หรือทำการแจ้งเตือนเมื่อจองเสร็จ
         setShowModal(false); // ปิด modal
     };
-
+    const Booking = () => {
+        const history = useHistory();
+    
+        useEffect(() => {
+            const handleBeforeUnload = (event) => {
+                // เปลี่ยนเส้นทางไปหน้าหลักเมื่อมีการรีเฟรช
+                history.push('/');
+                event.preventDefault();
+            };
+    
+            window.addEventListener('beforeunload', handleBeforeUnload);
+    
+            return () => {
+                window.removeEventListener('beforeunload', handleBeforeUnload);
+            };
+        }, [history]);}
     return (
         <div className="booking-container">
             <h1>จองที่พัก</h1>
