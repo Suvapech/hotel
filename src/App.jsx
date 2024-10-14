@@ -23,7 +23,7 @@ const App = () => {
     const [accommodations, setAccommodations] = useState([
         {
             name: "Chang Phueak Gate Premier Hotel",
-            price: 30 ,
+            price: 506 ,
             location: "234/18ถ.มณีนพรัตน์, เมืองเชียงใหม่ 50200 ",
             type: "โรงแรม",
             images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
