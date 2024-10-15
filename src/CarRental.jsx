@@ -9,114 +9,33 @@ const TravelRecommendations = () => {
             image: 'https://scontent.fcnx4-1.fna.fbcdn.net/v/t39.30808-6/449392179_1017582550372690_1198970276584673956_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=xEZSAUWlOgoQ7kNvgH9hQqc&_nc_ht=scontent.fcnx4-1.fna&_nc_gid=AI0v99_g5UAsk9RYcPBKnuN&oh=00_AYDAWCkUPiZb1FYmf2hIJomzFzrYVRonsJtc9AtvBb3MSw&oe=6713D9DB',
         },
         {
-            name: 'อุทยานแห่งชาติดอยอินทนนท์',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/image28-1024x684.jpg?tr=dpr-2,w-675',
+            name: 'Nan789carrent',
+            image: 'https://impro.usercontent.one/appid/oneComWsb/domain/nan789carrent.com/media/nan789carrent.com/onewebmedia/S__6627834___serialized1.jpg?etag=%2297ea6-6429a06e%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1264%2B712&quality=85',
         },
         {
-            name: 'ม่อนแจ่ม',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/image21-1024x684.jpg?tr=dpr-2,w-675',
+            name: 'Sbuy Carrent',
+            image: 'https://www.sbuycarrent.com/wp-content/uploads/2020/11/logo.jpg',
         },
         {
-            name: 'แกรนด์แคนยอน',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/gUVCZ9kB-image24-1024x683.jpg?tr=dpr-2,w-675',
+            name: 'Double Clean & Car Rent',
+            image: 'https://img.wongnai.com/p/800x0/2024/05/03/295098a0975c460291193672ddcf7f01.jpg',
         },
         {
-            name: 'วัดพระธาตุดอยสุเทพ',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/image4-1024x599.jpg?tr=dpr-2,w-675',
+            name: 'Anny Carrent Chiangmai',
+            image: 'https://img.wongnai.com/p/800x0/2024/05/09/2fbf90f5074f49cb88f42d4ff7730c35.jpg',
         },
         {
-            name: 'ดอยอ่างขาง',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/M7ACyMQU-image35-1024x683.jpg?tr=dpr-2,w-675',
+            name: 'aomcarrent',
+            image: 'https://img.wongnai.com/p/800x0/2024/05/03/983f90f4eeee492ba8cfbe00edbb9ad6.jpg',
 
         },
         {
-            name: 'สวนสัตว์เชียงใหม่',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/ks4hK8uG-image11.png?tr=dpr-2,w-675',
+            name: 'BT Carrent',
+            image: 'https://img.wongnai.com/p/800x0/2024/05/03/5b28cd2c4a534ff3809fd71d51b080ca.jpg',
         },
         {
-            name: 'วันนิมมาน',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/wxXtAHBw-image19-1024x683.jpg?tr=dpr-2,w-675',
-        },
-        {
-            name: 'แม่กำปอง',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/4WnlrLFw-image27-1024x683.jpg?tr=dpr-2,w-675',
-        },
-        {
-            name: 'สวนพฤกษศาสตร์สมเด็จพระนางเจ้าสิริกิติ์',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/image17-1024x680.jpg?tr=dpr-2,w-675',
-        },
-        {
-            name: 'คลองแม่ข่า',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/RQOqoYDs-image12.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'วัดพระธาตุดอยคำ',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/wlIc9HYP-image6.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'ป่าบงเปียง',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/sUw0WvJX-image15.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'วัดเจดีย์หลวงวรวิหาร',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/H8nxzzZS-image16.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'เส้นทางศึกษาธรรมชาติกิ่วแม่ปาน',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/aRQnbMY9-image5.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'เส้นทางศึกษาธรรมชาติน้ำตกผาดอกเสี้ยว',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/sEQtpPw1-image25.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'วัดสวนดอก',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/6FbBZ8r6-image13.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'เก๊าไม้ล้านนารีสอร์ท',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/image7-1024x692.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'ดอยหลวงเชียงดาว',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/Wsn9113I-image32.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'วัดต้นแกว๋น',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/B4Bf1Vx8-image1.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'วัดพระสิงห์วรมหาวิหาร',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/M62Cq0yo-image26.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'วัดเจดีย์เจ็ดยอด',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/T6yKCaed-image18.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'วัดอุโมงค์',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/k56yosq8-image33-1024x683.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'ศูนย์วิจัยเกษตรหลวงเชียงใหม่ (ขุนวาง)',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/WlR5py3Z-image10.png?tr=dpr-2,w-675',
-
-        },
-        {
-            name: 'ตลาดวโรรส',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/025xgJAb-image3.png?tr=dpr-2,w-675',
-        },
-        {
-            name: 'ดอยอินทนนท์',
-            image: 'https://cms.dmpcdn.com/travel/2022/11/11/3a307b20-61a4-11ed-909d-855455af1869_webp_original.jpg',
-        },
-        {
-            name: 'โครงการบ้านข้างวัด',
-            image: 'https://cms.dmpcdn.com/travel/2022/11/11/17192860-61ab-11ed-b909-a177dde090ad_webp_original.jpg',
-        },
-        {
-            name: 'ปางช้างแม่สา',
-            image: 'https://cms.dmpcdn.com/travel/2022/11/11/cf29af20-61af-11ed-b66f-05023fcf70cc_webp_original.jpg',
+            name: 'Cargo',
+            image: 'https://img.wongnai.com/p/800x0/2024/05/03/93dc44b30d61489fa0faecc3f49e7938.jpg',
         },
     ];
 

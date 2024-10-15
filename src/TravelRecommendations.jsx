@@ -100,7 +100,6 @@ const TravelRecommendations = () => {
         {
             name: 'ศูนย์วิจัยเกษตรหลวงเชียงใหม่ (ขุนวาง)',
             image: 'https://ik.imagekit.io/tvlk/blog/2024/04/WlR5py3Z-image10.png?tr=dpr-2,w-675',
-
         },
         {
             name: 'ตลาดวโรรส',

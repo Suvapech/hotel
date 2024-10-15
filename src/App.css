@@ -100,55 +100,6 @@ body {
   margin: 20px 0; /* ระยะห่างบนล่าง */
   z-index: 100; /* ให้มันอยู่เหนือส่วนอื่น */
 }
-
-
-/* Media Queries สำหรับอุปกรณ์ต่างๆ */
-@media (max-width: 600px) { /* โทรศัพท์มือถือ */
-  body {
-    font-size: 14px; /* ขนาดตัวอักษรเล็กลง */
-  }
-  
-  .navbar .logo {
-    font-size: 20px; /* ลดขนาดโลโก้ */
-  }
-  
-  .welcome-message {
-    font-size: 36px; /* ขนาดตัวอักษรข้อความต้อนรับเล็กลง */
-  }
-  .navbar {
-    flex-direction: column; /* เปลี่ยนแนวตั้งสำหรับเมนู */
-  }
-  .navbar .menu {
-    flex-direction: column; /* เปลี่ยนเมนูให้เป็นแนวตั้ง */
-    width: 100%; /* ให้ความกว้างเป็น 100% */
-  }
-  .navbar .menu a {
-    padding: 10px; /* ปรับระยะห่างของลิงก์ให้เหมาะสม */
-    font-size: 14px; /* ลดขนาดฟอนต์ */
-  }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) { /* iPad และแท็บเล็ต */
-  body {
-    font-size: 15px; /* ขนาดตัวอักษรเล็กลง */
-  }
-  
-  .navbar .logo {
-    font-size: 22px; /* ลดขนาดโลโก้ */
-  }
-  
-  .welcome-message {
-    font-size: 48px; /* ขนาดตัวอักษรข้อความต้อนรับเล็กลง */
-  }
-  .navbar {
-    flex-direction: row; /* ใช้แนวนอนสำหรับเมนู */
-    padding: 10px 15px; /* ปรับระยะห่าง */
-  }
-  .navbar .menu a {
-    padding: 10px 12px; /* ปรับระยะห่างของลิงก์ */
-    font-size: 16px; /* ขนาดฟอนต์ที่เหมาะสม */
-  }
-}
 .type-menu-container {
   position: relative; /* เพื่อให้เมนูประเภทอยู่เหนือส่วนอื่น */
 }
@@ -178,22 +129,54 @@ body {
 .type-menu button:hover {
   background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลังเมื่อเอาเมาส์ไปชี้ */
 }
-
-@media (min-width: 1025px) { /* คอมพิวเตอร์และโน้ตบุ๊ก */
-  .navbar {
-    padding: 10px 20px; /* ระยะห่างที่เหมาะสม */
-  }
-  .navbar .menu a {
-    padding: 10px 15px; /* ระยะห่างของลิงก์ */
-    font-size: 16px; /* ขนาดฟอนต์ */
-  }
-}.search-bar {
-  margin-top: 10px; /* ระยะห่างจากปุ่มค้นหา */
-}
-
 .search-bar input {
   width: 50%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+@media (max-width: 600px) { /* โทรศัพท์มือถือ */
+  .navbar {
+    flex-direction: column; /* เปลี่ยนแนวตั้งสำหรับเมนู */
+    padding: 10px; /* ลดระยะห่าง */
+  }
+  .navbar .menu {
+    flex-direction: column; /* เปลี่ยนเมนูให้เป็นแนวตั้ง */
+    width: 100%; /* ให้ความกว้างเต็ม */
+    align-items: center; /* จัดกลางแนวนอน */
+  }
+  .navbar .menu a {
+    font-size: 14px; /* ลดขนาดฟอนต์ */
+    padding: 8px 12px; /* ลดระยะห่าง */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) { /* iPad และแท็บเล็ต */
+  .navbar {
+    flex-direction: row; /* ใช้แนวนอนสำหรับเมนู */
+    padding: 10px 15px; /* ปรับระยะห่าง */
+  }
+  .navbar .menu {
+    flex-direction: row; /* ใช้แนวนอนสำหรับเมนู */
+    justify-content: center; /* จัดกลางแนวนอน */
+    width: auto; /* ปรับความกว้างตามเนื้อหา */
+  }
+  .navbar .menu a {
+    font-size: 15px; /* ขนาดฟอนต์ที่เหมาะสม */
+    padding: 8px 14px; /* ลดระยะห่าง */
+  }
+}
+
+@media (min-width: 1025px) { /* คอมพิวเตอร์และโน้ตบุ๊ก */
+  .navbar {
+    padding: 10px 20px; /* ระยะห่างที่เหมาะสม */
+  }
+  .navbar .menu {
+    flex-direction: row; /* ใช้แนวนอนสำหรับเมนู */
+    width: auto; /* ใช้ความกว้างตามเนื้อหา */
+  }
+  .navbar .menu a {
+    font-size: 16px; /* ขนาดฟอนต์ปกติ */
+    padding: 10px 15px; /* ระยะห่างของลิงก์ */
+  }
 }
