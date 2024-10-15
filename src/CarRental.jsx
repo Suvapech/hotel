@@ -1,6 +1,6 @@
 import React from 'react';
 import TravelLocationCard from './TravelLocationCard';
-import './styles.css'; // นำเข้าไฟล์ CSS ของคุณ
+import './styles.css'; // นำเข้าไฟล์ CSS 
 
 const TravelRecommendations = () => {
     const travelLocations = [

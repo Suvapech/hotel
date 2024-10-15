@@ -11,6 +11,7 @@ const BookingPage = () => {
     const [totalPrice, setTotalPrice] = useState(0);
     const [showModal, setShowModal] = useState(false);
     const [slipImage, setSlipImage] = useState(null);
+    const [guestName, setGuestName] = useState('');
 
     if (!location.state) {
         return <div>ไม่พบข้อมูลการจอง</div>;
@@ -91,6 +92,14 @@ const BookingPage = () => {
                 <label>
                     จำนวนผู้เข้าพัก:
                     <input type="number" min="1" value={guestCount} onChange={(e) => setGuestCount(e.target.value)} />
+                </label>
+                <label>
+                    ชื่อผู้เข้าพัก:
+                    <input
+                        type="text"
+                        value={guestName}
+                        onChange={(e) => setGuestName(e.target.value)}
+                    />
                 </label>
                 <button className="submit-booking" onClick={calculateTotalPrice}>
                     ส่งการจอง
