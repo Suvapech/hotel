@@ -1,0 +1,88 @@
+/* Contact.css */
+.contact {
+    width: 400px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form div {
+    margin-bottom: 15px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact input, 
+.contact textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.contact button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact button:hover {
+    background-color: #45a049;
+}
+
+.contact h3 {
+    margin-top: 30px;
+    color: #333;
+}
+
+.contact p {
+    color: #666;
+    margin: 5px 0;
+    font-size: 14px;
+}
+.success-message {
+    font-size: 200px !important; /* ขนาดฟอนต์ */
+    color: green !important; /* เปลี่ยนสีข้อความเป็นสีเขียว */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: floatUp 3s ease-in-out forwards;
+    opacity: 0;
+    line-height: 1; /* ปรับค่า line-height เพื่อให้ข้อความไม่ถูกตัด */
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translate(-50%, 50%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -200%);
+        opacity: 0;
+    }
+}

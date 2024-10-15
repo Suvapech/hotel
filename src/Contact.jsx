@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
+import './Contact.css';
 
 const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // ส่งข้อมูลที่ติดต่อไปยังเซิร์ฟเวอร์ หรือทำการประมวลผลข้อมูลที่ติดต่อ
         console.log({ name, email, message });
-        // รีเซ็ตฟอร์ม
         setName('');
         setEmail('');
         setMessage('');
+        setIsSubmitted(true);
+
+        setTimeout(() => {
+            setIsSubmitted(false);
+        }, 3000);
     };
 
     return (
@@ -47,10 +52,11 @@ const Contact = () => {
                 </div>
                 <button type="submit">ส่ง</button>
             </form>
+            {isSubmitted && <p className="success-message">ส่งสำเร็จ</p>}
             <div>
                 <h3>ข้อมูลติดต่อ</h3>
-                <p>เบอร์โทร: 012-345-6789</p>
-                <p>อีเมล: contact@aloha.com</p>
+                <p>เบอร์โทร: 083-294-6789</p>
+                <p>อีเมล: Aloha@gmail.com</p>
             </div>
         </div>
     );

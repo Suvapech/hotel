@@ -5,6 +5,7 @@ import AccommodationCard from './AccommodationCard';
 import TravelRecommendations from './TravelRecommendations'; // นำเข้าคอมโพเนนต์สำหรับแนะนำสถานที่ท่องเที่ยว
 import BookingPage from './Booking';
 import Contact from './Contact'; // นำเข้าคอมโพเนนต์ Contact
+import CarRental from './CarRental';
 
 const App = () => {
     const [isTypeMenuOpen, setIsTypeMenuOpen] = useState(false);
@@ -278,6 +279,209 @@ const App = () => {
                 amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
             },
         },
+        {
+            name: "โรงแรมแชงกรีลา เชียงใหม่",
+            price: 4700,
+            location: " 89/8 ถ. ช้างคลาน, เมืองเชียงใหม่ ",
+            type: "โรงแรม",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a6/b5/cf/view-from-room.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a6/af/81/deluxe-pool-view-twin.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a6/b0/8b/presidential-suite.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/a6/af/b7/deluxe-terrace-king.jpg?w=1200&h=-1&s=1"],
+            roomDetails: {   // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "Away Chiang Mai Thapae Resort",
+            price: 3596,
+            location: " 9 Thapae Soi 5, Thapae Road, Chang Moi, เมืองเชียงใหม่ ",
+            type: "รีสอร์ท",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/6c/4c/a5/caption.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/6c/4c/b5/caption.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/bb/2e/c2/caption.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/a8/92/48/away-chiang-mai-thapae.jpg?w=1200&h=-1&s=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "ณ นิรันดร์ โรแมนติก บูทีค รีสอร์ท",
+            price: 3980,
+            location: " 1/1 ซอย 9 ถนนเจริญประเทศ ตำบล ช้างคลาน, เมืองเชียงใหม่ ",
+            type: "รีสอร์ท",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/7b/6e/53/getlstd-property-photo.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6e/47/a2/harmonious-british-indian.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6e/47/e2/pool-v18683912.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/6e/48/39/grounds-v18683997.jpg?w=1200&h=-1&s=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "โรงแรมแทมมารีน วิลเลจ",
+            price: 5223,
+            location: " 50/1 ถ. ราชดำเนิน ต. ศรีภูมิ, เมืองเชียงใหม่ ",
+            type: "โรงแรม",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/dd/35/c6/tamarind-village-courtyard.jpg?w=1000&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/01/dd/35/d8/the-village-spa.jpg?w=600&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/ee/02/9c/spa--v3773945.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/ee/03/2e/lanna-deluxe-room--v3773952.jpg?w=1200&h=-1&s=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "Khum Phaya Resort & Spa",
+            price: 3121,
+            location: " 137 หมู่ 5 ถ. เชียงใหม่ - ลำปาง ตำบลหนองป่าครั่ง, เมืองเชียงใหม่ ",
+            type: "รีสอร์ท",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/45/32/17/khum-phaya-resort-spa.jpg?w=1100&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/8d/f6/ec/lanna-villa.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/c6/6d/a8/khum-phaya-resort-spa.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/8e/11/9d/khum-phaya-resort-spa.jpg?w=1200&h=-1&s=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+                        {
+            name: "โรงแรมอโมรา ท่าแพ",
+            price: 1175,
+            location: " 22 Chaiyapooum Road, เมืองเชียงใหม่ 50300 ไทย ",
+            type: "รีสอร์ท",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/f7/da/09/amora-resort-tapae-chiangmai.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/8d/f6/ec/lanna-villa.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/f7/da/b2/amora-resort-tapae-chiangmai.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/7e/d7/12/caption.jpg?w=1200&h=-1&s=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },
+        },
+        {
+            name: "รติลานนา ริเวอร์ไซด์ สปา รีสอร์ท",
+            price: 6504,
+            location: " 33 ถนนช้างคลาน, Chang Khlan, เมืองเชียงใหม่ ",
+            type: "รีสอร์ท",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/48/bd/09/swimming-pool.jpg?w=800&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/04/7c/f9/ratilanna-riverside-spa.jpg?w=800&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/62/da/79/our-riverside-lawn-is.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/04/7c/a2/ratilanna-riverside-spa.jpg?w=800&h=-1&s=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },},
+	      {
+            name: "โอเรียนเต็ล สยาม รีสอร์ท",
+            price: 2666,
+            location: " 40/1 หมู่ที่ 2 ตำบลท่าศาลา อ.เมือง, เมืองเชียงใหม่ ",
+            type: "รีสอร์ท",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/df/34/d6/lotus-classic-3-bedroom.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/df/31/b8/mini-family-deluxe-villa.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/df/31/e1/mini-family-deluxe-villa.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/df/2f/31/mini-family-deluxe-villa.jpg?w=1200&h=-1&s=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },},
+            {
+                name: "โรงแรมราชมรรคา",
+                price: 7487,
+                location: " 6 ซอย 9 ถนนราชมรรคา ต. พระสิงห์, เมืองเชียงใหม่ ",
+                type: "โรงแรม",
+                images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/73/4b/00/suite-bedroom.jpg?w=1200&h=-1&s=1",
+                    "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/01/73/47/55/pool.jpg?w=600&h=-1&s=1",
+                    "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/01/73/47/4b/gallery.jpg?w=600&h=-1&s=1",
+                    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/73/4a/e3/pool-views.jpg?w=1200&h=-1&s=1"],
+                roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                    size: 30, // ขนาดห้อง
+                    beds: 1, // จำนวนเตียง
+                    amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+                },},
+                                     {
+                name: "ยันตรศรี รีสอร์ท",
+                price: 1791,
+                location: " 24/17 Nimmanhaemin Road Soi 6 Tambol Suthep, เมืองเชียงใหม่ ",
+                type: "รีสอร์ท",
+                images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/51/54/f2/yantarasri-resort.jpg?w=1200&h=-1&s=1",
+                    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/51/54/ea/yantarasri-resort.jpg?w=1200&h=-1&s=1",
+                    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/51/52/84/bedroom-superior-twin.jpg?w=1200&h=-1&s=1",
+                    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/51/52/71/bathroom-superior-twin.jpg?w=1200&h=-1&s=1"],
+                roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                    size: 30, // ขนาดห้อง
+                    beds: 1, // จำนวนเตียง
+                    amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+                },},
+                {
+                    name: "โรงแรมฟลอร่า ครีค, เชียงใหม่",
+                    price: 2738,
+                    location: " 90 moo.4, Bangpong, เมืองเชียงใหม่ 50230 ไทย ",
+                    type: "โรงแรม",
+                    images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/0e/bc/b4/flora-creek.jpg?w=1200&h=-1&s=1",
+                        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/0e/c6/2c/deluxe-plantation.jpg?w=1200&h=-1&s=1",
+                        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/0e/c0/48/deluxe-plantation-balcony.jpg?w=1200&h=-1&s=1",
+                        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/11/a8/fc/swimming-pool.jpg?w=1200&h=-1&s=1"],
+                    roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                        size: 30, // ขนาดห้อง
+                        beds: 1, // จำนวนเตียง
+                        amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+                    },},
+                    {
+            name: "บ้านอยู่สบายบูทีคเฮาส์",
+            price: 1003,
+            location: " 213/7 Mahidol Rd T. Changklan, เมืองเชียงใหม่ ",
+            type: "โรงแรม",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/e8/d3/65/baan-u-sabai-chiangmai.jpg?w=1200&h=-1&s=1 ",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/02/c0/4e/58/baan-u-sabai-boutique.jpg?w=600&h=-1&s=1 ",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/02/c0/4e/3c/baan-u-sabai-boutique.jpg?w=600&h=-1&s=1 ",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/02/c0/4e/63/baan-u-sabai-boutique.jpg?w=600&h=-1&s=1 "],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },},
+            {
+            name: "Hongkhao Village",
+            price: 1927,
+            location: " 18/9 ป่าพร้าวนอก ซอย 2 ถนนช้างคลาน, เมืองเชียงใหม่  ",
+            type: "โรงแรม",
+            images: [ // เปลี่ยนจาก image เป็น images และเก็บรูปหลายรูป
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/06/e9/40/getlstd-property-photo.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/59/6e/7d/hongkhao-village.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/59/6e/9c/hongkhao-village.jpg?w=1200&h=-1&s=1",
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/3c/30/e9/caption.jpg?w=1200&h=-1&s=1"],
+            roomDetails: { // ข้อมูลรายละเอียดห้องพัก
+                size: 30, // ขนาดห้อง
+                beds: 1, // จำนวนเตียง
+                amenities: ["Wi-Fi ฟรี", "แอร์", "ทีวี", "ตู้เย็น", "น้ำร้อน"], // สิ่งอำนวยความสะดวก
+            },},
+
+        
     ]);
 
     const handleTypeButtonClick = () => {
@@ -312,7 +516,7 @@ const App = () => {
                     <div className="menu">
                         <Link to="/" onClick={handleHotelButtonClick}>ที่พัก</Link>
                         <Link to="/travel">สถานที่ท่องเที่ยว <span className="new-tag">ใหม่</span></Link>
-                        <Link to="#">รถเช่า</Link>
+                        <Link to="/car-rental">รถเช่า</Link>
                         <Link to="/contact">ติดต่อเรา</Link> {/* เพิ่มลิงก์ไปยังหน้าติดต่อ */}
                         <div className="type-menu-container">
                             <button className="accommodation-type-button" onClick={handleTypeButtonClick}>
@@ -370,6 +574,7 @@ const App = () => {
                     <Route path="/travel" element={<TravelRecommendations />} />
                     <Route path="/booking" element={<BookingPage />} />
                     <Route path="/contact" element={<Contact />} /> {/* ปรับเส้นทางไปยังหน้าติดต่อ */}
+                    <Route path="/car-rental" element={<CarRental />} />
                 </Routes>
             </div>
         </Router>

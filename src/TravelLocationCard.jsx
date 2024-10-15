@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TravelLocationCard = ({ name, image, coordinates }) => {
+const TravelLocationCard = ({ name, image}) => {
     const handleViewOnMap = () => {
-        window.open(`https://www.google.com/maps/dir/?api=1&destination=${coordinates.lat},${coordinates.lng}`, '_blank');
+        window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name)}`, '_blank');
     };
 
     return (

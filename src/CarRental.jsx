@@ -5,8 +5,8 @@ import './styles.css'; // นำเข้าไฟล์ CSS ของคุณ
 const TravelRecommendations = () => {
     const travelLocations = [
         {
-            name: 'ถนนคนเดินท่าแพ',
-            image: 'https://ik.imagekit.io/tvlk/blog/2024/04/56zA2SX1-image23-1024x683.jpg?tr=dpr-2,w-675',
+            name: 'บริษัท เฮียหมาคาร์เร้นท์',
+            image: 'https://scontent.fcnx4-1.fna.fbcdn.net/v/t39.30808-6/449392179_1017582550372690_1198970276584673956_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=xEZSAUWlOgoQ7kNvgH9hQqc&_nc_ht=scontent.fcnx4-1.fna&_nc_gid=AI0v99_g5UAsk9RYcPBKnuN&oh=00_AYDAWCkUPiZb1FYmf2hIJomzFzrYVRonsJtc9AtvBb3MSw&oe=6713D9DB',
         },
         {
             name: 'อุทยานแห่งชาติดอยอินทนนท์',
@@ -122,7 +122,7 @@ const TravelRecommendations = () => {
 
     return (
         <div>
-            <h4>แนะนำสถานที่ท่องเที่ยว</h4>
+            <h4>แนะนำสถานที่เช่ารถ</h4>
             <div className="travel-location-list">
                 {travelLocations.map((location, index) => (
                     <TravelLocationCard
